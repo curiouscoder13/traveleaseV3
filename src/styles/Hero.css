@@ -6,7 +6,7 @@
   justify-content: flex-start;
   width: 90vw;
   height: auto;
-  margin-top: 4rem;
+  margin-top: 6rem;
   margin-bottom: 2rem;
 }
 
@@ -46,7 +46,7 @@
   padding-left: 0.5rem;
 }
 .search-container input::placeholder {
-  color: gray;
+  color: rgb(129, 129, 129);
 }
 .search-container input:focus {
   outline: none;
