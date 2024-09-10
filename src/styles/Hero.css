@@ -31,9 +31,9 @@
   justify-content: center;
   width: 28rem;
   height: 1.75rem;
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 1rem;
-  background-color: black;
+  background-color: var(--background-color);
   padding: 0.25em;
 }
 .search-container input {
@@ -41,12 +41,12 @@
   height: 80%;
   border: none;
   background-color: transparent;
-  color: white;
+  color: black;
   font-size: 1rem;
   padding-left: 0.5rem;
 }
 .search-container input::placeholder {
-  color: white;
+  color: gray;
 }
 .search-container input:focus {
   outline: none;
@@ -57,7 +57,7 @@
   justify-content: center;
   width: 1.75rem;
   height: 1.75rem;
-  background-color: black;
+  background-color: var(--background-color);
   cursor: pointer;
   margin-right: 0.5rem;
 }
@@ -84,7 +84,7 @@
     font-size: 0.75rem;
   }
   .search-container input::placeholder {
-    color: white;
+    color: gray;
   }
   .search-container input:focus {
     outline: none;
