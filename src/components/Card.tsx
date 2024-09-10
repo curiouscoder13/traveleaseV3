@@ -55,7 +55,7 @@ const Card: React.FC<CardProps> = ({ isClicked, inputValue }) => {
         })}
       {isClicked &&
         (searchResult === "country" || searchResult === "countries") &&
-        countries.map((country) => {
+        countries.flatMap((country) => {
           return country.cities.map((city) => {
             return (
               <a

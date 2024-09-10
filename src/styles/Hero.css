@@ -95,6 +95,10 @@
   }
 }
 @media (max-width: 480px) {
+  .hero-container {
+    margin-top: 4rem;
+  }
+
   .hero-pitch {
     font-size: 1.5rem;
   }
