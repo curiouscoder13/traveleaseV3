@@ -8,6 +8,10 @@
   z-index: 10;
 }
 
+.card-link {
+  text-decoration: none;
+}
+
 .card-contents {
   display: flex;
   flex-direction: column;

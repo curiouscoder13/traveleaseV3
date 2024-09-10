@@ -37,14 +37,20 @@ const Card: React.FC<CardProps> = ({ isClicked, inputValue }) => {
         (searchResult === "beach" || searchResult === "beaches") &&
         beaches.map((beach) => {
           return (
-            <div className="card-contents" key={beach.id}>
-              <div className="card-image">
-                <img src={beach.imageUrl} alt="card-image" />
+            <a
+              className="card-link"
+              href={`/recommendations/beaches/${beach.id}`}
+              key={beach._id}
+            >
+              <div className="card-contents">
+                <div className="card-image">
+                  <img src={beach.imageUrl} alt="card-image" />
+                </div>
+                <div className="card-title">{beach.name}</div>
+                <div className="card-description">{beach.description}</div>
+                <button className="card-button">Visit</button>
               </div>
-              <div className="card-title">{beach.name}</div>
-              <div className="card-description">{beach.description}</div>
-              <button className="card-button">Visit</button>
-            </div>
+            </a>
           );
         })}
       {isClicked &&
@@ -52,14 +58,20 @@ const Card: React.FC<CardProps> = ({ isClicked, inputValue }) => {
         countries.map((country) => {
           return country.cities.map((city) => {
             return (
-              <div className="card-contents" key={city._id}>
-                <div className="card-image">
-                  <img src={city.imageUrl} alt="card-image" />
+              <a
+                className="card-link"
+                href={`/recommendations/beaches/${city._id}`}
+                key={city._id}
+              >
+                <div className="card-contents">
+                  <div className="card-image">
+                    <img src={city.imageUrl} alt="card-image" />
+                  </div>
+                  <div className="card-title">{city.name}</div>
+                  <div className="card-description">{city.description}</div>
+                  <button className="card-button">Visit</button>
                 </div>
-                <div className="card-title">{city.name}</div>
-                <div className="card-description">{city.description}</div>
-                <button className="card-button">Visit</button>
-              </div>
+              </a>
             );
           });
         })}
@@ -67,14 +79,20 @@ const Card: React.FC<CardProps> = ({ isClicked, inputValue }) => {
         (searchResult === "temple" || searchResult === "temples") &&
         temples.map((temple) => {
           return (
-            <div className="card-contents" key={temple.id}>
-              <div className="card-image">
-                <img src={temple.imageUrl} alt="card-image" />
+            <a
+              className="card-link"
+              href={`/recommendations/beaches/${temple._id}`}
+              key={temple._id}
+            >
+              <div className="card-contents" key={temple.id}>
+                <div className="card-image">
+                  <img src={temple.imageUrl} alt="card-image" />
+                </div>
+                <div className="card-title">{temple.name}</div>
+                <div className="card-description">{temple.description}</div>
+                <button className="card-button">Visit</button>
               </div>
-              <div className="card-title">{temple.name}</div>
-              <div className="card-description">{temple.description}</div>
-              <button className="card-button">Visit</button>
-            </div>
+            </a>
           );
         })}
       {isClicked && searchResult === "" && <div>No results found.</div>}

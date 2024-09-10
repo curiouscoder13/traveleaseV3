@@ -13,8 +13,8 @@
 - [x] Attach database to search bar
 - [x] Link card component to search bar
 - [x] Add mock recommendation page
-- [ ] Routing card component to recommendation page
-- [ ] Add recommendation pages
+- [x] Routing card component to recommendation page
+- [ ] Complete recommendation pages
 - [ ] Add authentication to recommendation page
 - [ ] Redirect to login page if not authenticated
 - [ ] Add a logout button
