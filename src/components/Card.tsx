@@ -60,7 +60,7 @@ const Card: React.FC<CardProps> = ({ isClicked, inputValue }) => {
             return (
               <a
                 className="card-link"
-                href={`/recommendations/beaches/${city._id}`}
+                href={`/recommendations/countries/${city._id}`}
                 key={city._id}
               >
                 <div className="card-contents">
@@ -81,7 +81,7 @@ const Card: React.FC<CardProps> = ({ isClicked, inputValue }) => {
           return (
             <a
               className="card-link"
-              href={`/recommendations/beaches/${temple._id}`}
+              href={`/recommendations/temples/${temple._id}`}
               key={temple._id}
             >
               <div className="card-contents" key={temple.id}>
