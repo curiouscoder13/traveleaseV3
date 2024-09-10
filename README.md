@@ -14,6 +14,7 @@
 - [x] Link card component to search bar
 - [x] Add mock recommendation page
 - [x] Routing card component to recommendation page
+- [x] Center the hero when card component is not visible
 - [ ] Complete recommendation pages
 - [ ] Add authentication to recommendation page
 - [ ] Redirect to login page if not authenticated

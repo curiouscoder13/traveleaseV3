@@ -29,7 +29,7 @@ export default function Hero() {
   useEventListener("click", onClick, btnRef);
 
   return (
-    <div className="hero-container">
+    <div className={!isClicked ? "hero-container-centered" : "hero-container"}>
       <div className="hero-pitch">Discover the best travel destinations.</div>
       <div className="search-container">
         <input
