@@ -4,12 +4,13 @@ import { useMediaQuery } from "../utils/useMediaQuery";
 
 export default function NavBar() {
   const [toggled, setToggled] = useState(false);
-  const matches = useMediaQuery("(max-width: 480px)");
+  const matches = useMediaQuery("(max-width: 768px)");
 
   return (
     <div className="navbar-container">
       <div className="navbar-logo">
         <a href="/">
+          <img className="company-logo" src="/travelease-2.webp" alt="TE" />
           Travel<span>Ease</span>
         </a>
       </div>

@@ -15,9 +15,10 @@
 - [x] Add mock recommendation page
 - [x] Routing card component to recommendation page
 - [x] Center the hero when card component is not visible
-- [ ] Complete recommendation pages
+- [x] Add simple recommendation page
 - [ ] Add authentication to recommendation page
-- [ ] Redirect to login page if not authenticated
+- [ ] If a card is clicked, redirect to login page if not authenticated
 - [ ] Add a logout button
 - [ ] Add data to MongoDB database
 - [ ] Replace mock data with data from MongoDB database
+- [ ] Complete recommendation pages
