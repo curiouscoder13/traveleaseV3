@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../../layouts/baseLayout.astro";
 import { travelRecommendations } from "../../../utils/travel_Recs";
+import { SignedIn, SignedOut } from "@clerk/astro/components";
 
 export function getStaticPaths() {
   const countries = travelRecommendations[0].countries;
@@ -25,15 +26,22 @@ const { name, imageURL, description } = Astro.props;
 ---
 
 <BaseLayout title="TravelEase: Recommendations | Countries">
-  <div class="country-container">
-    <div class="image-container">
-      <img src={imageURL} alt="country-image" />
+  <SignedIn>
+    <div class="country-container">
+      <div class="image-container">
+        <img src={imageURL} alt="country-image" />
+      </div>
+      <div class="name-container">{name}</div>
+      <div class="description-container">{description}</div>
+      <button>Check Flights</button>
+      <button>Book Hotel</button>
     </div>
-    <div class="name-container">{name}</div>
-    <div class="description-container">{description}</div>
-    <button>Check Flights</button>
-    <button>Book Hotel</button>
-  </div>
+  </SignedIn>
+  <SignedOut>
+    <div class="unauthorized-container">
+      You must be signed in to view this page.
+    </div>
+  </SignedOut>
 </BaseLayout>
 
 <style>
@@ -74,5 +82,13 @@ const { name, imageURL, description } = Astro.props;
     .country-container {
       margin-top: 4rem;
     }
+  }
+  .unauthorized-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
   }
 </style>

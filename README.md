@@ -16,9 +16,9 @@
 - [x] Routing card component to recommendation page
 - [x] Center the hero when card component is not visible
 - [x] Add simple recommendation page
-- [ ] Add authentication to recommendation page
-- [ ] If a card is clicked, redirect to login page if not authenticated
-- [ ] Add a logout button
+- [x] Add authentication to recommendation page
+- [x] If a card is clicked, redirect to recommendations page, and if not logged in, show need to login to view page
+- [x] Add a logout button
 - [ ] Add data to MongoDB database
 - [ ] Replace mock data with data from MongoDB database
 - [ ] Complete recommendation pages
