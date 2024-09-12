@@ -4,7 +4,66 @@ import BaseLayout from "../layouts/baseLayout.astro";
 
 <BaseLayout title="TravelEase: About">
   <div class="about-container">
-    <div>About</div>
+    <div class="title-bold">About TravelEase</div>
+    <div>Welcome to TravelEase, your ultimate travel companion! 🌍✨</div>
+    <div class="title-bold">Our Mission</div>
+    <div>
+      At TravelEase, our mission is to make travel planning effortless and
+      enjoyable for everyone. We believe that exploring new destinations should
+      be exciting, not stressful. That’s why we’re here to provide you with
+      personalized travel recommendations, insider tips, and comprehensive
+      guides to help you make the most of your adventures.
+    </div>
+    <div class="title-bold">Our Story</div>
+    <div>
+      TravelEase was founded by a group of passionate travelers who wanted to
+      share their love for exploring the world. After years of navigating
+      through countless travel websites and guidebooks, we realized there had to
+      be a better way to plan trips. So, we combined our expertise and
+      experiences to create a platform that simplifies travel planning and
+      inspires wanderlust.
+    </div>
+    <div class="title-bold">What We Offer</div>
+    <div>
+      <strong>Personalized Recommendations:</strong> Whether you’re looking for a
+      quiet beach getaway or an action-packed city adventure, TravelEase tailors
+      recommendations to your preferences.
+    </div>
+    <div>
+      <strong>Expert Tips:</strong> Our team of travel experts shares insider tips
+      and hidden gems to help you discover the best of each destination.
+    </div>
+    <div>
+      <strong>Comprehensive Guides:</strong> From detailed itineraries to packing
+      lists, we provide all the information you need for a seamless travel experience.
+    </div>
+    <div>
+      <strong>Community Insights:</strong> Connect with fellow travelers, share your
+      experiences, and get advice from a vibrant community of travel enthusiasts.
+    </div>
+    <div class="title-bold">Our Values</div>
+    <div>
+      <strong>Passion for Travel:</strong> We are driven by our love for exploring
+      new places and cultures.
+    </div>
+    <div>
+      <strong>Customer-Centric:</strong> Your satisfaction is our top priority. We
+      strive to provide exceptional service and support.
+    </div>
+    <div>
+      <strong>Sustainability:</strong> We promote responsible travel practices to
+      minimize our impact on the environment and support local communities.
+    </div>
+    <div>
+      <strong>Innovation:</strong> We continuously improve our platform to offer
+      the best travel planning experience.
+    </div>
+    <div class="title-bold">Join Us on Our Journey</div>
+    <div>
+      At TravelEase, we believe that travel has the power to transform lives.
+      Join us on our journey to make travel planning easier and more enjoyable.
+      Let’s explore the world together, one adventure at a time.
+    </div>
   </div>
 </BaseLayout>
 
@@ -12,10 +71,17 @@ import BaseLayout from "../layouts/baseLayout.astro";
   .about-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 10vh;
+    width: 60%;
+    padding: 1rem;
     gap: 0.5rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+  .title-bold {
+    font-size: 2rem;
+    font-weight: bold;
   }
 </style>
